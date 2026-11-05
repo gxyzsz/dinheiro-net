@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Interativa: Influencer & Renda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="magazine">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <div class="logo">REVISTA<span>·DIGITAL</span></div>
+            <div class="page-indicator" id="pageIndicator">Página 1 de 5</div>
+        </div>
+
+        <!-- Conteúdo das páginas -->
+        <div class="pages-container">
+            <!-- PÁGINA 1 -->
+            <div class="page active" id="page1">
+                <h1>Ganhe dinheiro como influencer</h1>
+                <p class="lead">O guia interativo para transformar sua presença online em uma fonte de renda real — sem enrolação.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 2rem 0;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <p>Você já pensou em viver de internet? O mercado de influência digital movimenta bilhões e está cada vez mais acessível. Mas por onde começar? O que realmente funciona?</p>
+                        <p>Nesta revista interativa de 5 páginas, vamos explorar os caminhos mais conhecidos, os medos que travam iniciantes e dados reais de uma pesquisa com pessoas como você.</p>
+                        <p><span class="highlight">Role para o lado</span> e descubra como dar o primeiro passo com segurança.</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="background: #f7efe9; border-radius: 50%; width: 200px; height: 200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 4px dashed #d9a066;">
+                            <span style="font-size: 4rem;">📱</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-grid">
+                    <div class="card"><h4>💡 5 páginas</h4><p>Conteúdo direto ao ponto</p></div>
+                    <div class="card"><h4>📊 2 gráficos</h4><p>Dados reais de pesquisa</p></div>
+                    <div class="card"><h4>🚀 Passo a passo</h4><p>Do zero à primeira renda</p></div>
+                </div>
+            </div>
+
+            <!-- PÁGINA 2 -->
+            <div class="page" id="page2">
+                <h2>O que as pessoas mais conhecem</h2>
+                <p>Perguntamos: <strong>"Qual forma de ganhar dinheiro na internet você mais conhece?"</strong> O resultado revela o que está na boca do povo — e também o que ainda é mistério para muitos.</p>
+                <div class="chart-container">
+                    <canvas id="chart1"></canvas>
+                </div>
+                <p style="font-size: 0.95rem; text-align: center; color: #5b6b72;">Base: 11 respostas válidas (pesquisa interna).</p>
+                <p><span class="highlight">Influencer</span> disparou como a mais lembrada (8 votos), seguida por venda de produtos, prestação de serviços e "não conheço" (1 voto cada). Marketing de afiliados não foi citado por ninguém — uma oportunidade de ouro para quem quer se destacar!</p>
+            </div>
+
+            <!-- PÁGINA 3 -->
+            <div class="page" id="page3">
+                <h2>O que trava a largada?</h2>
+                <p>Perguntamos: <strong>"O que mais te impede de começar a ganhar dinheiro na internet?"</strong> As respostas mostram que os obstáculos são mais emocionais e práticos do que parece.</p>
+                <div class="chart-container">
+                    <canvas id="chart2"></canvas>
+                </div>
+                <p style="font-size: 0.95rem; text-align: center; color: #5b6b72;">Base: 11 respostas válidas (pesquisa interna).</p>
+                <p><span class="highlight">Falta de tempo</span> lidera com 4 votos, seguida por dificuldade para conseguir clientes (3), falta de recurso (2), e empatados com 1 voto: falta de conhecimento e medo de golpes. A boa notícia? Quase tudo isso pode ser resolvido com estratégia e informação confiável.</p>
+            </div>
+
+            <!-- PÁGINA 4 -->
+            <div class="page" id="page4">
+                <h2>Do zero ao primeiro milhar</h2>
+                <p>Escolha um nicho que você ama, seja consistente e construa autoridade. O caminho é mais simples do que parece — mas exige método.</p>
+                <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                    <div class="card"><h4>1. Nicho</h4><p>Moda, games, finanças, lifestyle... O que você domina?</p></div>
+                    <div class="card"><h4>2. Conteúdo</h4><p>Poste com frequência e qualidade. Reels e TikToks têm alcance orgânico.</p></div>
+                    <div class="card"><h4>3. Engajamento</h4><p>Responda comentários, crie enquetes, construa comunidade.</p></div>
+                    <div class="card"><h4>4. Monetização</h4><p>Parcerias, afiliados, produtos digitais, publis.</p></div>
+                </div>
+                <p style="margin-top: 1.5rem;">💡 <strong>Dica de ouro:</strong> Comece pequeno. Um perfil com 1.000 seguidores engajados pode gerar mais renda que 100 mil seguidores desinteressados. Foque em oferecer valor real para sua audiência.</p>
+            </div>
+
+            <!-- PÁGINA 5 -->
+            <div class="page" id="page5">
+                <h2>O próximo passo é seu</h2>
+                <p>Você já conhece as formas mais populares, os medos que travam iniciantes e um caminho prático para começar como influencer. Agora é hora de agir.</p>
+                <div style="background: #f7efe9; border-radius: 24px; padding: 2rem; margin: 1.5rem 0;">
+                    <h3 style="margin-top: 0;">📌 Resumo da pesquisa</h3>
+                    <p>• 8 em 11 pessoas conhecem o modelo influencer.<br>
+                       • Falta de tempo (4 votos) é o maior impeditivo.<br>
+                       • Medo de golpes e falta de conhecimento aparecem, mas podem ser superados com informação de qualidade.</p>
+                </div>
+                <p><strong>Comece hoje:</strong> escolha um tema, grave um vídeo curto, publique e veja a resposta. O aprendizado vem com a prática.</p>
+                <p style="margin-top: 2rem; font-style: italic; color: #7a6a5e;">— Revista Digital · Edição Especial Influencer —</p>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="nav-pages">
+            <button class="nav-btn" id="prevBtn" disabled>← Anterior</button>
+            <div class="page-dots" id="dotsContainer">
+                <span class="dot active" data-page="1"></span>
+                <span class="dot" data-page="2"></span>
+                <span class="dot" data-page="3"></span>
+                <span class="dot" data-page="4"></span>
+                <span class="dot" data-page="5"></span>
+            </div>
+            <button class="nav-btn" id="nextBtn">Próxima →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
